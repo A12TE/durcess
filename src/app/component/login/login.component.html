@@ -1,0 +1,32 @@
+    <div class="container main">
+        <div class="card text-black mt-3">
+            <div class="row g-0">
+                <div class="col-md-4 col-12 border border-black">
+                    <div class="card-body">
+                        <!--title--> 
+                           <div class="text-center">
+                              <img src="/title.webp" width="225px" height="200px" alt="">
+                               <h3 class="main-1 mt-3">Durcess Royal</h3>
+                            </div>
+                         <!--end for title--> 
+                        <form action="" [formGroup]="loginform" (ngSubmit)="checklogin()">
+                            <div class="form-group mt-4">
+                                <label for="" class="form-label">Username</label>
+                                <input type="text" class="form-control" formControlName="username" placeholder="username">
+                            </div>
+                            <div class="form-group mt-4">
+                                <label for="" class="form-label">Password</label>
+                                <input type="text" class="form-control" formControlName="password" placeholder="password">
+                            </div>
+                            <div class="form-group mt-4">
+                                <button class="btn btn-danger w-100" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-8 col-12">
+                    <img src="/main-1.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>

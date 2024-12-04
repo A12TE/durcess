@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+          <div class="col-md-4" *ngFor="let p of product">
+               <div class="card">
+                <div class="card-header">
+                    <img [src]="p.image" class="img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">{{p.category | uppercase}}</h4>
+                     <p class="card-text">{{p.title }}</p>
+                </div>
+                <div class="card-footer">
+                    <p class="card-text">MRP:{{p.price}} <del>1525</del></p>
+                    <p><span class="badge bg-info p-4">{{p.rating.rate}}</span></p>
+                </div>
+               </div>
+          </div>
+    </div>
+</div>
